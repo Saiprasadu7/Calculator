@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header"><h2>Calculator</h2></div>
+        <div class="calculator">
+            <div class="display">
+                <input id="print" readonly>
+            </div><br>
+            <div class="buttons">
+                <input type="button" value="7" onclick="sum('7')"/>
+                <input type="button" value="8" onclick="sum('8')"/>
+                <input type="button" value="9" onclick="sum('9')"/>
+                <input type="button" value="=" onclick="calculate()" id="operator"/>
+                <input type="button" value="4" onclick="sum('4')"/>
+                <input type="button" value="5" onclick="sum('5')"/>
+                <input type="button" value="6" onclick="sum('6')"/>
+                <input type="button" value="*" onclick="sum('*')" id="operator"/>
+                <input type="button" value="1" onclick="sum('1')"/>
+                <input type="button" value="2" onclick="sum('2')"/>
+                <input type="button" value="3" onclick="sum('3')"/>
+                <input type="button" value="/" onclick="sum('/')" id="operator"/>
+                <input type="button" value="0" onclick="sum('0')"/>
+                <input type="button" value="." onclick="sum('.')"/>
+                <input type="button" value="-" onclick="sum('-')"/>
+                <input type="button" value="+" onclick="sum('+')" id="operator"/>
+                <input id="clr" type="button" value="clr" onclick="clearValue()"/>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
